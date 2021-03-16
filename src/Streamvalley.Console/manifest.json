@@ -1,0 +1,10 @@
+{
+  "Name": "Streamvalley",
+  "Author": "Timmmy",
+  "Version": "1.0.0",
+  "Description": "Streamvalley is a chaos mod for Stardew Valley",
+  "UniqueID": "Timmmy.Streamvalley",
+  "EntryDll": "Streamvalley.Console.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": []
+}

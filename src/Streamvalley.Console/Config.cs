@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using Microsoft.Xna.Framework.Graphics;
 using Newtonsoft.Json;
 using StardewModdingAPI;
@@ -12,7 +13,7 @@ namespace Streamvalley.Console
         public const string PayloadFolder = "Payloads";
         public const string ConfigFile = "config.json";
 
-        public static Payload Mod;
+        public static IList<Payload> Mod;
 
         static Config()
         {
@@ -26,7 +27,7 @@ namespace Streamvalley.Console
             else
             {
                 string json = File.ReadAllText(Path.Combine(ConfigFolder, ConfigFile));
-                Mod = JsonConvert.DeserializeObject<Payload>(json);
+                Mod = JsonConvert.DeserializeObject<List<Payload>>(json);
             }
         }
     }

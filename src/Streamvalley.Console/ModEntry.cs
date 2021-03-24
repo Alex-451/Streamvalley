@@ -46,7 +46,7 @@ namespace Streamvalley.Console
 
         public void RegisterPayloads(IList<MethodInfo> payloads)
         {
-            
+
         }
 
     }
